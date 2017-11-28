@@ -17,8 +17,9 @@ for iter = 1:num_iters
     %       of the cost function (computeCost) and gradient here.
     %
 
-
-
+	delta = (1/m) * sum(X .* repmat((X * theta - y), 1, size(X, 2)));	
+	
+	theta = (theta' - (alpha * delta))';
 
 
 
@@ -27,6 +28,8 @@ for iter = 1:num_iters
 
     % Save the cost J in every iteration    
     J_history(iter) = computeCost(X, y, theta);
+
+    %disp(J_history(iter))
 
 end
 
