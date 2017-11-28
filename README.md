@@ -9,4 +9,6 @@ Topics:
 * Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)
 
 Assignments:
-* 
+* Linear Regression
+* Logistic Regression
+ 
